@@ -126,7 +126,6 @@ const ResetStyles = createGlobalStyle`
   /* A elements that don't have a class get default styles */
   a:not([class]) {
     text-decoration-skip-ink: auto;
-    color: var(--accent-color);
   }
   
   ul {
@@ -148,6 +147,17 @@ const DefaultStyles = createGlobalStyle`
     font-size: var(--font-size-base);
     line-height: var(--line-height-m);
     font-weight: var(--font-weight-regular);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    background-color: var(--card-background-color);
+    max-width: 20.4375rem; /* 327px */
+    min-height: 48.75rem; /* 780px */
   }
 `;
 
