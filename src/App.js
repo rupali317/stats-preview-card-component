@@ -16,7 +16,6 @@ const BaseStyles = createGlobalStyle`
       --neutral-white: hsl(0, 0%, 100%);
       --neutral-white-opacity-1: hsla(0, 0%, 100%, 0.75);
       --neutral-white-opacity-2: hsla(0, 0%, 100%, 0.6);
-      --link-color: hsl(228, 45%, 44%);
 
       /* Typography */
       --font-size-s: 0.75rem; /* 12px */
@@ -25,7 +24,7 @@ const BaseStyles = createGlobalStyle`
       --font-size-l: 1.75rem; /* 28px */
       --font-size-xl: 2.25rem; /* 36px; */
       --font-weight-bold: 700;
-      --font-weight-normal: 400;
+      --font-weight-regular: 400;
       --line-height-base: normal;
       --line-height-m: 1.5625rem; /* 25px */
       --line-height-l: 2rem; /* 32px */
@@ -127,7 +126,7 @@ const ResetStyles = createGlobalStyle`
   /* A elements that don't have a class get default styles */
   a:not([class]) {
     text-decoration-skip-ink: auto;
-    color: var(--link-color);
+    color: var(--accent-color);
   }
   
   ul {
@@ -141,10 +140,22 @@ const ResetStyles = createGlobalStyle`
   }
 `;
 
+const DefaultStyles = createGlobalStyle`
+  body {
+    background-color: var(--main-background-color);
+    color: var(--neutral-white);
+    font-family: "Inter", sans-serif;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-m);
+    font-weight: var(--font-weight-regular);
+  }
+`;
+
 export const App = () => (
   <>
     <BaseStyles />
     <ResetStyles />
+    <DefaultStyles />
     <Card />
   </>
 );
