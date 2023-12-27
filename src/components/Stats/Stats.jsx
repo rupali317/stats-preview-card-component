@@ -1,10 +1,11 @@
-import React from 'React';
+import React from "react";
+import { StatsData } from "./StatsData";
 
-export const Text = () => (
-    <div>
-        10k+ companies
-314 templates
-12m+ queries
-    </div>
-)
+const data = StatsData.map(([index, number, unit]) => (
+  <ul key={index}>
+    <li>{number}</li>
+    <li>{unit}</li>
+  </ul>
+));
 
+export const Stats = () => <div>{data}</div>
