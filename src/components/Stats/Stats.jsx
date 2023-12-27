@@ -8,4 +8,4 @@ const data = StatsData.map(([index, number, unit]) => (
   </ul>
 ));
 
-export const Stats = () => <div>{data}</div>
+export const Stats = () => <section>{data}</section>
