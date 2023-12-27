@@ -25,6 +25,7 @@ const BaseStyles = createGlobalStyle`
       --font-size-xl: 2.25rem; /* 36px; */
       --font-weight-bold: 700;
       --font-weight-regular: 400;
+      --letter-spacing: 0.0625rem; /* 1px */
       --line-height-base: normal;
       --line-height-m: 1.5625rem; /* 25px */
       --line-height-l: 2rem; /* 32px */
@@ -51,7 +52,7 @@ const BaseStyles = createGlobalStyle`
   
   @font-face {
     font-family: "Lexend Deca";
-    src: url("../public/fonts/LexendDeca/static/LexendDeca-Regular.ttf") format("truetype")
+    src: url("/fonts/LexendDeca/static/LexendDeca-Regular.ttf") format("truetype");
     font-style normal;
     font-weight: var(--font-weight-normal);
     font-display: swap;
@@ -59,7 +60,7 @@ const BaseStyles = createGlobalStyle`
 
   @font-face {
     font-family: "Inter";
-    src: url("../public/fonts/Inter/static/Inter-Regular.ttf") format("truetype")
+    src: url("/fonts/Inter/static/Inter-Regular.ttf") format("truetype");
     font-style normal;
     font-weight: var(--font-weight-normal);
     font-display: swap;
@@ -67,7 +68,7 @@ const BaseStyles = createGlobalStyle`
 
   @font-face {
     font-family: "Inter";
-    src: url("../public/fonts/Inter/static/Inter-Bold.ttf") format("truetype")
+    src: url("/fonts/Inter/static/Inter-Bold.ttf") format("truetype");
     font-style normal;
     font-weight: var(--font-weight-bold);
     font-display: swap;
@@ -154,10 +155,11 @@ const DefaultStyles = createGlobalStyle`
     justify-content: center;
   }
 
+  /* RRC: CHECK AGAIN */
   main {
     background-color: var(--card-background-color);
     max-width: 20.4375rem; /* 327px */
-    min-height: 48.75rem; /* 780px */
+    max-height: 48.75rem; /* 780px */
   }
 `;
 
