@@ -161,6 +161,13 @@ const DefaultStyles = createGlobalStyle`
     max-width: 20.4375rem; /* 327px */
     max-height: 48.75rem; /* 780px */
   }
+
+  section {
+    display: flex;
+    gap: var(--space-m);
+    flex-direction: column;
+    padding: var(--space-m) var(--space-base) var(--space-base) var(--space-base);
+  }
 `;
 
 export const App = () => (

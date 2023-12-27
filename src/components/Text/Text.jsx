@@ -1,13 +1,35 @@
 import React from "react";
+import styled from "styled-components";
+
+const HgGroup = styled.hgroup`
+  display: flex;
+  text-align: center;
+  gap: var(--space-xs);
+  flex-direction: column;
+`;
+
+const Heading = styled.h3`
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-l);
+`;
+
+const Highlight = styled.strong`
+  color: var(--accent-color);
+`;
+
+const Paragraph = styled.p`
+  color: var(--neutral-white-opacity-1);
+`;
 
 export const Text = () => (
-  <hgroup>
-    <h3>
-      Get <strong>insights</strong> that help your business grow.
-    </h3>
-    <p>
+  <HgGroup>
+    <Heading>
+      Get <Highlight>insights</Highlight> that help your business grow.
+    </Heading>
+    <Paragraph>
       Discover the benefits of data analytics and make better decisions
       regarding revenue, customer experience, and overall efficiency.
-    </p>
-  </hgroup>
+    </Paragraph>
+  </HgGroup>
 );
