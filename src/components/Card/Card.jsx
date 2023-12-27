@@ -4,11 +4,11 @@ import { Stats } from "../Stats";
 import { Text } from "../Text";
 
 export const Card = () => (
-  <section>
+  <>
     <Photo />
-    <div className="text-content">
+    <section>
       <Text />
       <Stats />
-    </div>
-  </section>
+    </section>
+  </>
 );
