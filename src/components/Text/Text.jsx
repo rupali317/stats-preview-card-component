@@ -6,6 +6,7 @@ const HgGroup = styled.hgroup`
   text-align: center;
   gap: var(--space-xs);
   flex-direction: column;
+  min-width: 16.5rem;   /* 264px */
 `;
 
 const Heading = styled.h3`

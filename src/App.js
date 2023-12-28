@@ -160,6 +160,8 @@ const DefaultStyles = createGlobalStyle`
     background-color: var(--card-background-color);
     max-width: 20.4375rem; /* 327px */
     max-height: 48.75rem; /* 780px */
+    border-radius: var(--border-radius-soft);
+    box-shadow: var(--card-box-shadow);
   }
 
   section {
