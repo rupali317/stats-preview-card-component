@@ -1,17 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-
-const Small = styled.small`
-  font-size: var(--font-size-s);
-`;
-
-const Link = styled.a`
-  color: var(--accent-color);
-
-  &:hover {
-    color: var(--neutral-white);
-  }
-`;
+import { Small, Link } from "../../styles/Footer.style";
 
 export const Footer = () => (
   <Small>
