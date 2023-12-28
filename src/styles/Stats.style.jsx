@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DesktopWidth } from "../Breakpoints";
 
 export const UnorderedList = styled.ul`
   display: flex;
@@ -7,7 +8,7 @@ export const UnorderedList = styled.ul`
   align-items: center;
   text-align: center;
 
-  @media (min-width: 80rem) {
+  @media (min-width: ${DesktopWidth}) {
     flex-direction: row;
     gap: 3.75rem; /* 60px */
     text-align: left;

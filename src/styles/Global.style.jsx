@@ -1,11 +1,8 @@
 import { createGlobalStyle } from "styled-components";
+import { DesktopWidth } from "../Breakpoints";
 
 export const BaseStyles = createGlobalStyle`
   :root {
-      /* Device width */
-      --desktop-width-layout: 80rem; /* 1280px */
-      --mobile-width-layout: 23.4375rem; /* 375px; */
-
       /* Colors */
       --main-background-color: hsl(233, 47%, 7%);
       --card-background-color: hsl(244, 38%, 16%);
@@ -188,7 +185,7 @@ export const DefaultStyles = createGlobalStyle`
     padding: var(--space-m) var(--space-base) var(--space-base) var(--space-base);
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: ${DesktopWidth}) {
     main {
       flex-direction: row-reverse;
       min-width: 69.375rem; /* 1110px */

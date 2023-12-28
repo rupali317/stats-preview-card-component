@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { DesktopWidth } from "../Breakpoints";
 
 export const Picture = styled.picture`
   border-radius: var(--border-radius-soft) var(--border-radius-soft)
     var(--border-radius-none) var(--border-radius-none);
   background-color: var(--accent-color);
 
-  @media (min-width: 80rem) {
+  @media (min-width: ${DesktopWidth}) {
     border-radius: var(--border-radius-none) var(--border-radius-soft)
       var(--border-radius-soft) var(--border-radius-none);
   }
@@ -18,7 +19,7 @@ export const Image = styled.img`
   border-radius: var(--border-radius-soft) var(--border-radius-soft)
     var(--border-radius-none) var(--border-radius-none);
 
-  @media (min-width: 80rem) {
+  @media (min-width: ${DesktopWidth}) {
     border-radius: var(--border-radius-none) var(--border-radius-soft)
       var(--border-radius-soft) var(--border-radius-none);
     max-width: 33.75rem; /* 540px */
