@@ -7,12 +7,22 @@ const HgGroup = styled.hgroup`
   gap: var(--space-xs);
   flex-direction: column;
   min-width: 16.5rem;   /* 264px */
+
+  @media (min-width:80rem) {
+    text-align: left;
+    gap: var(--space-s);
+  }
 `;
 
 const Heading = styled.h3`
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-l);
+
+  @media (min-width:80rem) {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
+  }
 `;
 
 const Highlight = styled.strong`
@@ -21,6 +31,10 @@ const Highlight = styled.strong`
 
 const Paragraph = styled.p`
   color: var(--neutral-white-opacity-1);
+
+  @media (min-width:80rem) {
+    max-width: 23.375rem; /* 374px */
+  }
 `;
 
 export const Text = () => (

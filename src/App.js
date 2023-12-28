@@ -5,8 +5,7 @@ import { Card } from "./components/Card";
 const BaseStyles = createGlobalStyle`
   :root {
       /* Device width */
-      --desktop-width-layout: 90rem; /* 1440px */
-      --tablet-width-layout: 48rem; /* 768px */
+      --desktop-width-layout: 80rem; /* 1280px */
       --mobile-width-layout: 23.4375rem; /* 375px; */
 
       /* Colors */
@@ -70,6 +69,21 @@ const BaseStyles = createGlobalStyle`
     font-weight: 400;
     font-display: swap;
   }
+
+  //ASK THIS. Please remove the comment and comment out the above 2 definitions for font-face holding inter font
+  /* @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/static/Inter-Bold.ttf") format("truetype");
+    font-weight: var(--font-weight-bold);
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+    font-weight: var(--font-weight-regular);
+    font-display: swap;
+  } */
 `;
 
 const ResetStyles = createGlobalStyle`
@@ -118,7 +132,6 @@ const ResetStyles = createGlobalStyle`
   */
   h3 {
     line-height: 1.1;
-    text-wrap: balance;
   }
 
   /* A elements that don't have a class get default styles */
@@ -157,6 +170,8 @@ const DefaultStyles = createGlobalStyle`
     background-color: var(--card-background-color);
     max-width: 20.4375rem; /* 327px */
     min-height: 48.75rem; /* 780px */
+    display: flex;
+    flex-direction: column;
     border-radius: var(--border-radius-soft);
     box-shadow: var(--card-box-shadow);
   }
@@ -167,7 +182,20 @@ const DefaultStyles = createGlobalStyle`
     flex-direction: column;
     padding: var(--space-m) var(--space-base) var(--space-base) var(--space-base);
   }
-`;
+
+  @media (min-width: 80rem) {
+    main {
+      flex-direction: row-reverse;
+      min-width: 69.375rem;
+      max-height: 27.875rem;
+      min-height: auto;
+    }
+
+    section {
+      padding: var(--space-xl) var(--space-xxl) var(--space-l) var(--space-xl);
+      gap:var(--space-xl);
+    }
+  }`;
 
 export const App = () => (
   <>

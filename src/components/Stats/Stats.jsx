@@ -7,6 +7,11 @@ const Article = styled.article`
   flex-direction: column;
   gap: var(--space-s);
   align-items: center;
+
+  @media (min-width:80rem) {
+    flex-direction: row;
+    gap: 3.75rem;
+  }
 `;
 
 const StatsNumber = styled.li`
@@ -28,6 +33,10 @@ const StatsUnit = styled.li`
 
 const UnorderedList = styled.ul`
   text-align: center;
+
+  @media (min-width:80rem) {
+    text-align: left;
+  }
 `;
 
 const data = StatsData.map(([index, number, unit]) => (
