@@ -14,7 +14,7 @@ export const HgGroup = styled.hgroup`
   }
 `;
 
-export const Heading = styled.h3`
+export const Heading = styled.h1`
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-l);
