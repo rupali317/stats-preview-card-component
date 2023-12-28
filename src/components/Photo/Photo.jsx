@@ -1,11 +1,12 @@
 import React from "react";
 import * as PhotoStyles from "../../styles/Photo.style";
+import { DesktopWidth } from "../../Breakpoints";
 
 export const Photo = () => (
   <PhotoStyles.Picture>
     <source
       srcSet="../../images/image-header-desktop.jpg"
-      media="(min-width:80rem)"
+      media={`(min-width: ${DesktopWidth})`}
       width="654"
       height="480"
     ></source>
