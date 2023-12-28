@@ -53,24 +53,21 @@ const BaseStyles = createGlobalStyle`
   @font-face {
     font-family: "Lexend Deca";
     src: url("/fonts/LexendDeca/static/LexendDeca-Regular.ttf") format("truetype");
-    font-style normal;
-    font-weight: var(--font-weight-normal);
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Inter";
-    src: url("/fonts/Inter/static/Inter-Regular.ttf") format("truetype");
-    font-style normal;
-    font-weight: var(--font-weight-normal);
+    font-weight: 400;
     font-display: swap;
   }
 
   @font-face {
     font-family: "Inter";
     src: url("/fonts/Inter/static/Inter-Bold.ttf") format("truetype");
-    font-style normal;
-    font-weight: var(--font-weight-bold);
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
     font-display: swap;
   }
 `;
@@ -159,7 +156,7 @@ const DefaultStyles = createGlobalStyle`
   main {
     background-color: var(--card-background-color);
     max-width: 20.4375rem; /* 327px */
-    max-height: 48.75rem; /* 780px */
+    min-height: 48.75rem; /* 780px */
     border-radius: var(--border-radius-soft);
     box-shadow: var(--card-box-shadow);
   }
