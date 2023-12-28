@@ -22,7 +22,7 @@ export const Image = styled.img`
   @media (min-width: ${DesktopWidth}) {
     border-radius: var(--border-radius-none) var(--border-radius-soft)
       var(--border-radius-soft) var(--border-radius-none);
-    max-width: 33.75rem; /* 540px */
-    max-height: 27.875rem; /* 446px */
+    min-width: 33.75rem; /* 540px */
+    min-height: 27.875rem; /* 446px */
   }
 `;
