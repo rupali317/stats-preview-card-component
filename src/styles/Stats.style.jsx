@@ -8,7 +8,7 @@ export const Article = styled.article`
 
   @media (min-width: 80rem) {
     flex-direction: row;
-    gap: 3.75rem;
+    gap: 3.75rem; /* 60px */
   }
 `;
 

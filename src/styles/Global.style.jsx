@@ -43,7 +43,7 @@ export const BaseStyles = createGlobalStyle`
       --border-radius-soft: 0.5rem; /* 8px */
 
       /* Box shadows */
-      --card-box-shadow: 0rem 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.20);
+      --card-box-shadow: 0rem 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.20);  /* 0px 20px 20px -10px */
 
   }
   
@@ -189,8 +189,8 @@ export const DefaultStyles = createGlobalStyle`
   @media (min-width: 80rem) {
     main {
       flex-direction: row-reverse;
-      min-width: 69.375rem;
-      max-height: 27.875rem;
+      min-width: 69.375rem; /* 1110px */
+      max-height: 27.875rem; /* 446px */
       min-height: auto;
     }
 
