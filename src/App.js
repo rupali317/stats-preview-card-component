@@ -163,6 +163,7 @@ const DefaultStyles = createGlobalStyle`
     gap: var(--space-xs);
     align-items: center;
     justify-content: center;
+    padding: 1rem;   /* so that in mobile devices the card doesnt appear on the edge of the screen */
   }
 
   /* RRC: CHECK AGAIN */
@@ -174,6 +175,10 @@ const DefaultStyles = createGlobalStyle`
     flex-direction: column;
     border-radius: var(--border-radius-soft);
     box-shadow: var(--card-box-shadow);
+  }
+
+  footer {
+    text-align: center;
   }
 
   section {
