@@ -4,8 +4,12 @@ import { StatsData } from "./StatsData";
 
 const data = StatsData.map(([index, number, unit]) => (
   <StatsStyles.UnorderedList key={index}>
-    <StatsStyles.StatsNumber>{number}</StatsStyles.StatsNumber>
-    <StatsStyles.StatsUnit>{unit}</StatsStyles.StatsUnit>
+    <li>
+      <StatsStyles.StatsNumber>{number}</StatsStyles.StatsNumber>
+    </li>
+    <li>
+      <StatsStyles.StatsUnit>{unit}</StatsStyles.StatsUnit>
+    </li>
   </StatsStyles.UnorderedList>
 ));
 

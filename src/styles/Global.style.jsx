@@ -108,6 +108,7 @@ export const ResetStyles = createGlobalStyle`
 /* Avoid text overflows */
  body,
  h3,
+ h4,
  p {
     overflow-wrap: break-word;
   }
@@ -128,7 +129,8 @@ export const ResetStyles = createGlobalStyle`
 
   /* Set shorter line heights on headings and interactive elements, Balance text wrapping on headings
   */
-  h3 {
+  h3,
+  h4 {
     line-height: 1.1;
   }
 
