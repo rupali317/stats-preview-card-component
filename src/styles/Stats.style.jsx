@@ -15,7 +15,7 @@ export const UnorderedList = styled.ul`
   }
 `;
 
-export const StatsNumber = styled.h4`
+export const StatsNumber = styled.h2`
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-base);
