@@ -3,12 +3,12 @@ import * as StatsStyles from "../../styles/Stats.style";
 import { StatsData } from "./StatsData";
 
 const data = StatsData.map(([index, number, unit]) => (
-  <StatsStyles.UnorderedList key={index}>
-    <li>
-      <StatsStyles.StatsNumber>{number}</StatsStyles.StatsNumber>
-      <StatsStyles.StatsUnit>{unit}</StatsStyles.StatsUnit>
-    </li>
-  </StatsStyles.UnorderedList>
+  <li key={index}>
+    <StatsStyles.StatsNumber>{number}</StatsStyles.StatsNumber>
+    <StatsStyles.StatsUnit>{unit}</StatsStyles.StatsUnit>
+  </li>
 ));
 
-export const Stats = () => <StatsStyles.Article>{data}</StatsStyles.Article>;
+export const Stats = () => (
+  <StatsStyles.UnorderedList>{data}</StatsStyles.UnorderedList>
+);

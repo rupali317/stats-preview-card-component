@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
-export const Article = styled.article`
+export const UnorderedList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: var(--space-s);
   align-items: center;
+  text-align: center;
 
   @media (min-width: 80rem) {
     flex-direction: row;
     gap: 3.75rem; /* 60px */
+    text-align: left;
   }
 `;
 
@@ -26,12 +28,4 @@ export const StatsUnit = styled.p`
   letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
   color: var(--neutral-white-opacity-2);
-`;
-
-export const UnorderedList = styled.ul`
-  text-align: center;
-
-  @media (min-width: 80rem) {
-    text-align: left;
-  }
 `;
