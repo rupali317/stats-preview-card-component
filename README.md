@@ -53,15 +53,17 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
 
 ### Tested with
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [jest-dom Testing Library](https://github.com/testing-library/jest-dom?tab=readme-ov-file) - provides a set of custom jest matchers that one can use to extend jest. These will make tests more declarative, clear to read and to maintain. As part of that goal, one wants to avoid all the repetitive patterns that arise in doing so. Checking for an element's attributes, its text content, its css classes, etc.
+- Browsers used for testing: Google Chrome, Firefox, Safari, Brave, Microsoft Edge
+- Devices: 
+  - (Real) MacBook Pro (15 inch), Samsung Galaxy A33 5G, Samsung Galaxy S20+
+  - (Virtual) The mobile and tablet devices mentioned under Chrome's dev console
 
 ### What I learned
 
