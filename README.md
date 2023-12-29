@@ -67,7 +67,7 @@ Users should be able to:
 
 ### What I learned
 
-- The difference between `background-blend-mode` and `mix-blend-mode`. 
+- The difference between `background-blend-mode` and `mix-blend-mode`. The former is used in conjunction with background-image declaration. It blends between the layers of a background-image declaration. The latter blends HTML elements and is more inclusive.
 
 ### Continued development
 
