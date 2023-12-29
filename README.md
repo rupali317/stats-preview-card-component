@@ -33,11 +33,11 @@ Users should be able to:
 ![Stats preview card component card mobile version](./public/images/stats-preview-card-component-mobile.png)
 
 ### PageSpeed Insights results
-[Mobile version](https://pagespeed.web.dev/analysis/https-stats-preview-card-component-rc-netlify-app/2mjwk9hsyd?form_factor=mobile)
+[Mobile version](https://pagespeed.web.dev/analysis/https-stats-preview-card-component-rc-netlify-app/jnuyjpawsu?form_factor=mobile)
 
 ![PageSpeed insights mobile](./public/images/Page-speed-insights-mobile.png)
 
-[Desktop version](https://pagespeed.web.dev/analysis/https-stats-preview-card-component-rc-netlify-app/2mjwk9hsyd?form_factor=desktop)
+[Desktop version](https://pagespeed.web.dev/analysis/https-stats-preview-card-component-rc-netlify-app/jnuyjpawsu?form_factor=desktop)
 
 ![PageSpeed insights desktop](./public/images/Page-speed-insights-desktop.png)
 
