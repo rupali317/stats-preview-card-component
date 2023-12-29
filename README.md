@@ -88,5 +88,5 @@ Users should be able to:
 
 ## Acknowledgments
 
-I express my gratitude towards my mentor - Deborah for the insightful code review session.
-A big thank you to Alex for providing insights on some best practices related to UI testing and about third party extensions on browsers.
+- I express my gratitude towards my mentor - Deborah for the insightful code review session.
+- A big thank you to Alex for providing insights on some best practices related to UI testing and about third party extensions on browsers.
