@@ -97,7 +97,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Useful resources
 
-- [mix-blend-mode vs background-blend-mode](https://alistapart.com/article/blending-modes-demystified/) - This blog differentiates on when the above properties are used.
+- [mix-blend-mode vs background-blend-mode](https://alistapart.com/article/blending-modes-demystified/) - This blog differentiates on when these properties are used.
 - [Section vs Article](https://www.smashingmagazine.com/2022/07/article-section-elements-accessibility/) - This blog illustrates the use cases on when to use section tag vs article tag. I was impressed by the detailed examples.
 - [Picture element](https://fedmentor.dev/posts/html-plan-product-preview/#product-image) - This blog introduced me to the usage of picture element and its benefits about having good performance and letting us write cleaner and maintainable code.
 
