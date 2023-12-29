@@ -7,8 +7,6 @@ export const Photo = () => (
     <source
       srcSet="../../images/image-header-desktop.jpg"
       media={`(min-width: ${DesktopWidth})`}
-      width="654"
-      height="480"
     ></source>
     <PhotoStyles.Image
       src="../../images/image-header-mobile.jpg"
