@@ -1,6 +1,6 @@
 import React from "react";
 import * as PhotoStyles from "../../styles/Photo.style";
-import { DesktopWidth } from "../../Breakpoints";
+import { DesktopWidth } from "../../constants/Breakpoints";
 
 export const Photo = () => (
   <PhotoStyles.Picture>

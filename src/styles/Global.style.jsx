@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { DesktopWidth } from "../Breakpoints";
+import { DesktopWidth } from "../constants/Breakpoints";
 
 export const BaseStyles = createGlobalStyle`
   :root {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DesktopWidth } from "../Breakpoints";
+import { DesktopWidth } from "../constants/Breakpoints";
 
 export const Picture = styled.picture`
   border-radius: var(--border-radius-soft) var(--border-radius-soft)
