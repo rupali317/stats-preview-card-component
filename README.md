@@ -91,14 +91,14 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- I used CSP in HTML http-equiv meta tags. In future projects, I wish to move the CSP to HTTP header. 
+- For CSP, I have used 'unsafe-inline' even though I have not used inline styles in my project. Perhaps React is generating inline styles during runtime. I added the unsafe-inline otherwise the styles would not be applied. unsafe-inline was a quick fix but this is not a good practice since it is not safe against XSS. I would like to explore nonces or hashes to allow inline styles.
+- I want to keep practising more test cases for testing UI styles by using jest-dom testing library.
 
 ### Useful resources
 
 - [mix-blend-mode vs background-blend-mode](https://alistapart.com/article/blending-modes-demystified/) - This blog differentiates on when the above properties are used.
-- [Section vs Article](https://www.smashingmagazine.com/2022/07/article-section-elements-accessibility/) - This blog illustrates the use cases on when to use section tag vs article tag.
+- [Section vs Article](https://www.smashingmagazine.com/2022/07/article-section-elements-accessibility/) - This blog illustrates the use cases on when to use section tag vs article tag. I was impressed by the detailed examples.
 - [Picture element](https://fedmentor.dev/posts/html-plan-product-preview/#product-image) - This blog introduced me to the usage of picture element and its benefits about having good performance and letting us write cleaner and maintainable code.
 
 ## Author
