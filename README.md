@@ -73,7 +73,7 @@ Users should be able to:
 
 - I used CSP in HTML http-equiv meta tags. In future projects, I wish to move the CSP to HTTP header. 
 - For CSP, I have used 'unsafe-inline' even though I have not used inline styles in my project. Perhaps React is generating inline styles during runtime. I added the unsafe-inline otherwise the styles would not be applied. unsafe-inline was a quick fix but this is not a good practice since it is not safe against XSS. I would like to explore nonces or hashes to allow inline styles.
-- I want to keep practising more test cases for testing UI styles by using jest-dom testing library.
+- For testing visuals use a real browser with playwright (take and compare screenshots). Additionally, explore storybook and chromatic to provide visual differences.
 
 ### Useful resources
 
@@ -88,4 +88,5 @@ Users should be able to:
 
 ## Acknowledgments
 
-I express my gratitude towards my mentor - Deborah for the insightful code review session
+I express my gratitude towards my mentor - Deborah for the insightful code review session.
+A big thank you to Alex for providing insights on some best practices related to UI testing and about third party extensions on browsers.
