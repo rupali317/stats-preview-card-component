@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { DesktopWidth } from "../constants/Breakpoints";
 
-export const Section = styled.section`
+export const DivSection = styled.div`
   display: flex;
   text-align: center;
   gap: var(--space-xs);
