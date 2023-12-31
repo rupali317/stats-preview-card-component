@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { DesktopWidth } from "../constants/Breakpoints";
 
-export const HgGroup = styled.hgroup`
+export const Section = styled.section`
   display: flex;
   text-align: center;
   gap: var(--space-xs);
   flex-direction: column;
   min-width: 16.5rem; /* 264px */
+  padding: var(--space-none);
 
   @media (min-width: ${DesktopWidth}) {
     text-align: left;
